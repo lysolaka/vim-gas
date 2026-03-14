@@ -66,7 +66,7 @@ syn match gasLocalLabel	 /\d\{1,2\}[:fb]/
 " comments etc.
 syn match  gasOperator       /[+-/*=|&~<>]\|<=\|>=\|<>/
 syn region gasComment        start=/\/\*/ end=/\*\//
-syn region gasCommentSingle  start=/#/ end=/$/
+syn match  gasCommentSingle  /^#.*/ 
 syn region gasCommentSingle  start=/;/ end=/$/
 syn region gasCommentSingle  start=/@/ end=/$/
 if exists('g:gasCppComments')
